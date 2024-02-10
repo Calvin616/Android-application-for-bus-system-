@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TrackerX.Views.AddBusPage"
+             BackgroundColor="#112B47">
+    
+    
+    <ContentPage.Content>
+        <StackLayout Padding="20" Grid.Row="4" VerticalOptions="CenterAndExpand">
+            <Label Text="Add New Bus"
+                   FontSize="30"
+                   TextColor="LightBlue"
+                   HorizontalTextAlignment="Start"
+                   VerticalTextAlignment="Start"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Start"
+                   FontAttributes="Bold"></Label>
+
+            <Entry Placeholder="Bus Number" x:Name="BusNumberEntry" TextColor="White" PlaceholderColor="Gray" HorizontalTextAlignment="Center"></Entry>
+            <Entry Placeholder="Bus Type" x:Name="BusTypeEntry" TextColor="White" PlaceholderColor="Gray" HorizontalTextAlignment="Center"></Entry>
+            <Entry Placeholder="Bus Route Name" x:Name="BusRouteEntry" TextColor="White" PlaceholderColor="Gray" HorizontalTextAlignment="Center"></Entry>
+            <Entry Placeholder="Bus Route Number" x:Name="BusRouteNumberEntry" IsPassword="True" TextColor="White" PlaceholderColor="Gray" HorizontalTextAlignment="Center"></Entry>
+
+            <Button
+            VerticalOptions="Center"
+            Text="Add"
+            FontSize="16"
+            BackgroundColor="{StaticResource Primary}"
+            TextColor="White"
+            BorderWidth="2"
+            Margin="20,0,20,0"
+            CornerRadius="60"
+            Clicked="Button_Clicked">
+            </Button>
+
+            <Button
+            VerticalOptions="Center"
+            Text="Cancel"
+            FontSize="16"
+            TextColor="White"
+            BackgroundColor="{StaticResource Primary}"
+            BorderWidth="2"
+            Margin="20,0,20,0"
+            CornerRadius="60"
+            Clicked="Button_Clicked_1">
+
+            </Button>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TrackerX.Views.ForgetPassPage"
+             BackgroundColor="#112B47">
+    
+    <ContentPage.Content>
+        <StackLayout Padding="20" Grid.Row="4" VerticalOptions="Center">
+            <Label Text="Foget Password?"
+                   FontSize="25"
+                   TextColor="LightBlue"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Start"
+                   VerticalOptions="Start"
+                   FontAttributes="Bold"></Label>
+            <Label Text="Enter your email below to reset your password" HorizontalTextAlignment="Center" FontSize="16" Padding="0,0,0,0"></Label>
+
+            <Entry Placeholder="Email Address" x:Name="EmailEntry" TextColor="White" PlaceholderColor="Gray" HorizontalTextAlignment="Center"></Entry>
+            <Entry Placeholder="New Password " x:Name="NewPasswordEntry" TextColor="White" PlaceholderColor="Gray" HorizontalTextAlignment="Center"></Entry>
+            <Entry Placeholder="Comfirm Password" x:Name="ComfirmPasswordEntry" TextColor="White" PlaceholderColor="Gray" HorizontalTextAlignment="Center"></Entry>
+
+            <Button VerticalOptions="Center" 
+            Text="Verify Email" 
+            FontSize="16" 
+            BorderWidth="2"
+            Margin="20,0,20,0"
+            CornerRadius="60" 
+            BackgroundColor="{StaticResource Primary}"
+            Clicked="Button_Clicked_1"
+            />
+
+            <Button VerticalOptions="Center" 
+            Text="Update" 
+            FontSize="16" 
+            BorderWidth="2"
+            Margin="20,0,20,0"
+            CornerRadius="60" 
+            BackgroundColor="{StaticResource Primary}"
+            Clicked="Button_Clicked"
+            />
+            
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

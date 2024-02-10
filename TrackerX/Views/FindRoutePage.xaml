@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TrackerX.Views.FindRoutePage"
+              BackgroundColor="#112B47">
+    
+    <ContentPage.Content>
+        <StackLayout  Padding="25" Grid.Row="4" VerticalOptions="Start">
+            <Label Text="Find A Route"
+                   FontSize="25"
+                   TextColor="LightBlue"
+                   HorizontalTextAlignment="Start"
+                   VerticalTextAlignment="Start"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Start"
+                   FontAttributes="Bold"></Label>
+            <Label Text="Enter your journey details" HorizontalTextAlignment="Center" FontSize="16" Padding="0,0,0,0"></Label>
+
+            <Entry Placeholder="Your location" x:Name="LocationEntry" TextColor="White" PlaceholderColor="Gray" HorizontalTextAlignment="Center"></Entry>
+            <Entry Placeholder="Enter destination" x:Name="DestinationEntry" TextColor="White" PlaceholderColor="Gray" HorizontalTextAlignment="Center"></Entry>
+
+            <Button
+            VerticalOptions="Center"
+            Text="Find"
+            FontSize="16"
+            BackgroundColor="{StaticResource Primary}"
+            TextColor="White"
+            BorderWidth="2"
+            Margin="20,0,20,0"
+            CornerRadius="60"
+            Clicked="Button_Clicked">
+            </Button>
+
+            <Button
+            VerticalOptions="Center"
+            Text="Cancel"
+            FontSize="16"
+            BackgroundColor="{StaticResource Primary}"
+            TextColor="White"
+            BorderWidth="2"
+            Margin="20,0,20,0"
+            CornerRadius="60"
+            Clicked="Button_Clicked_1">
+            </Button>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

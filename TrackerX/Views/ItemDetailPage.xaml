@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TrackerX.Views.ItemDetailPage"
+             BackgroundColor="#112B47">
+
+    <StackLayout Spacing="20" Padding="15">
+        
+
+        <Label Text="Home"
+                   FontSize="35"
+                   TextColor="White"
+                   HorizontalTextAlignment="Center"
+                   FontAttributes="Bold"></Label>
+
+        <Frame
+                    BackgroundColor="Transparent"
+                    Margin="15"
+                    Padding="60"
+                    CornerRadius="50">
+        </Frame>
+
+        <Button VerticalOptions="Center" 
+            Text="Add a bus" 
+            FontSize="16" 
+            BorderWidth="2"
+            Margin="20,0,20,0"
+            CornerRadius="60" 
+            Clicked="Button_Clicked"
+            />
+        <Button VerticalOptions="Center" 
+            Text="Find route" 
+            FontSize="16" 
+            BorderWidth="2"
+            Margin="20,0,20,0"
+            CornerRadius="60" 
+            Clicked="Button_Clicked_1"
+            />
+        <Button VerticalOptions="Center" 
+            Text="search buses" 
+            FontSize="16" 
+            BorderWidth="2"
+            Margin="20,0,20,0"
+            CornerRadius="60" 
+            Clicked="Button_Clicked_2"
+            />
+        <Button VerticalOptions="Center" 
+            Text="Create new journey" 
+            FontSize="16" 
+            BorderWidth="2"
+            Margin="20,0,20,0"
+            CornerRadius="60" 
+            Clicked="Button_Clicked_3"
+            />
+
+
+    </StackLayout>
+    
+</ContentPage>

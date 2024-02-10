@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TrackerX.Views.SignupPage" 
+             BackgroundColor="#112B47">
+    
+    <ContentPage.Content>
+        
+        <StackLayout Padding="20" Grid.Row="4">
+            <Label Text="Sign up"
+                   FontSize="30"
+                   TextColor="White"
+                   HorizontalTextAlignment="Center"
+                   FontAttributes="Bold"></Label>
+
+            <Entry Placeholder="Username" x:Name="UsernameEntry" TextColor="White" PlaceholderColor="Gray"></Entry>
+            <Entry Placeholder="Mobile Number" x:Name="NumberEntry" TextColor="White" PlaceholderColor="Gray"></Entry>
+            <Entry Placeholder="Password" x:Name="PasswordEntry" IsPassword="True" TextColor="White" PlaceholderColor="Gray"></Entry>
+            <Entry Placeholder="Comfirm Password" x:Name="ComfirmPasswordEntry" IsPassword="True" TextColor="White" PlaceholderColor="Gray"></Entry>
+
+            <RelativeLayout Padding="20" VerticalOptions="Center" HorizontalOptions="Fill">
+                <CheckBox
+                        Color="White"
+                        IsChecked="False"
+                        CheckedChanged="Checkbox_CheckedChanged"
+                        x:Name="Checkbox"
+                        Margin="13,0,0,0">
+                </CheckBox>
+                <Label
+                     Text="Show Password"
+                     x:Name="ShowPasswordCheckbox"
+                     TextColor="White"
+                     FontSize="18"
+                     RelativeLayout.XConstraint="50"
+                     RelativeLayout.YConstraint="3"
+                       />
+                <Button
+                        x:Name="Forgotpasswordbutton"
+                        Text="Forgot Password?"
+                        TextColor="Gray"
+                        FontSize="17"
+                        FontAttributes="None"
+                        BackgroundColor="Transparent"
+                        RelativeLayout.XConstraint="220"
+                        RelativeLayout.YConstraint="-9"
+                        Clicked="Forgotpasswordbutton_Clicked"
+                        TextTransform="None"/>
+
+            </RelativeLayout>
+
+            <Button VerticalOptions="Center" 
+            Text="SignUp" 
+            FontSize="16" 
+            BorderWidth="2"
+            Margin="20,0,20,0"
+            CornerRadius="60" 
+            Clicked="Button_Clicked"
+            />
+
+            <Label HorizontalOptions="Center">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Already have an account?" TextColor="Gray" FontSize="16"></Span>
+                        <Span Text="Login" TextColor="Gray" FontAttributes="Bold" TextDecorations="Underline" FontSize="15"></Span>
+                    </FormattedString>
+                </Label.FormattedText>
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                </Label.GestureRecognizers>
+            </Label>
+                
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
